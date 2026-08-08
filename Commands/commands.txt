@@ -1,0 +1,67 @@
+NETWORK RECONNAISSANCE AND SECURITY ASSESSMENT
+
+Commands Used During the Security Assessment
+
+---------------------------------------------------------
+1. Verify Network Interfaces
+---------------------------------------------------------
+ip addr
+
+Purpose:
+Displays network interfaces and IP addresses of the virtual machines.
+
+---------------------------------------------------------
+2. Verify Connectivity
+---------------------------------------------------------
+ping -c 4 192.168.56.104
+
+Purpose:
+Checks connectivity between Kali Linux and Ubuntu Server.
+
+---------------------------------------------------------
+3. Host Discovery using Netdiscover
+---------------------------------------------------------
+sudo netdiscover -i eth1
+
+Purpose:
+Discovers active hosts on the Host-Only network.
+
+---------------------------------------------------------
+4. Host Discovery using Nmap
+---------------------------------------------------------
+nmap -sn 192.168.56.0/24
+
+Purpose:
+Identifies all active hosts within the subnet.
+
+---------------------------------------------------------
+5. Port Enumeration
+---------------------------------------------------------
+nmap 192.168.56.104
+
+Purpose:
+Scans the target machine for open TCP ports.
+
+---------------------------------------------------------
+6. Service Detection
+---------------------------------------------------------
+nmap -sV 192.168.56.104
+
+Purpose:
+Detects services and their versions running on open ports.
+
+---------------------------------------------------------
+7. Operating System Fingerprinting
+---------------------------------------------------------
+sudo nmap -O 192.168.56.104
+
+Purpose:
+Attempts to identify the operating system of the target.
+
+---------------------------------------------------------
+8. Verify SSH Service
+---------------------------------------------------------
+sudo systemctl status ssh
+
+Purpose:
+Checks whether the SSH service is active on Ubuntu Server.
