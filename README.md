@@ -62,8 +62,8 @@ The primary security consideration was the exposed SSH service, which should be 
 ## Repository Structure
 
 ```text
-Commands/      → Commands used during assessment
+Commands/                                   → Commands used during assessment
 Findings_Risk_Analysis_recommendation/      → Findings and risk analysis summary and recommendations
-Report/        → Final project report
-Screenshots/   → Practical evidence
-Topology/      → Network topology diagram
+Report/                                     → Final project report
+Screenshots/                                → Practical evidence
+Topology/                                   → Network topology diagram
